@@ -11,6 +11,12 @@
 		DB8FE0B728B63EF300072E9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8FE0B628B63EF300072E9B /* ContentView.swift */; };
 		DB8FE0B928B63EF500072E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB8FE0B828B63EF500072E9B /* Assets.xcassets */; };
 		DB8FE0BC28B63EF500072E9B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB8FE0BB28B63EF500072E9B /* Preview Assets.xcassets */; };
+		DB8FE0C328B6407600072E9B /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8FE0C228B6407600072E9B /* HomeScreenView.swift */; };
+		DB8FE0C928B66A7700072E9B /* MentalHealthNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8FE0C828B66A7700072E9B /* MentalHealthNews.swift */; };
+		DBA27FA828BAF272004F6711 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA27FA728BAF272004F6711 /* NewsView.swift */; };
+		DBA27FAA28BAF290004F6711 /* NewsArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA27FA928BAF290004F6711 /* NewsArticle.swift */; };
+		DBA27FAD28BAF735004F6711 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = DBA27FAC28BAF735004F6711 /* CachedAsyncImage */; };
+		DBA27FAF28BB06F7004F6711 /* NewsArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA27FAE28BB06F7004F6711 /* NewsArticleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,11 @@
 		DB8FE0B628B63EF300072E9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DB8FE0B828B63EF500072E9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB8FE0BB28B63EF500072E9B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB8FE0C228B6407600072E9B /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		DB8FE0C828B66A7700072E9B /* MentalHealthNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealthNews.swift; sourceTree = "<group>"; };
+		DBA27FA728BAF272004F6711 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		DBA27FA928BAF290004F6711 /* NewsArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticle.swift; sourceTree = "<group>"; };
+		DBA27FAE28BB06F7004F6711 /* NewsArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBA27FAD28BAF735004F6711 /* CachedAsyncImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +63,9 @@
 		DB8FE0B328B63EF300072E9B /* MMSChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				DB8FE0C728B66A5300072E9B /* Datas */,
+				DB8FE0C628B66A4B00072E9B /* Views */,
 				DB8FE0B428B63EF300072E9B /* MMSChallengeApp.swift */,
-				DB8FE0B628B63EF300072E9B /* ContentView.swift */,
 				DB8FE0B828B63EF500072E9B /* Assets.xcassets */,
 				DB8FE0BA28B63EF500072E9B /* Preview Content */,
 			);
@@ -65,6 +78,26 @@
 				DB8FE0BB28B63EF500072E9B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB8FE0C628B66A4B00072E9B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB8FE0B628B63EF300072E9B /* ContentView.swift */,
+				DBA27FA728BAF272004F6711 /* NewsView.swift */,
+				DBA27FA928BAF290004F6711 /* NewsArticle.swift */,
+				DBA27FAE28BB06F7004F6711 /* NewsArticleView.swift */,
+				DB8FE0C228B6407600072E9B /* HomeScreenView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DB8FE0C728B66A5300072E9B /* Datas */ = {
+			isa = PBXGroup;
+			children = (
+				DB8FE0C828B66A7700072E9B /* MentalHealthNews.swift */,
+			);
+			path = Datas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +116,9 @@
 			dependencies = (
 			);
 			name = MMSChallenge;
+			packageProductDependencies = (
+				DBA27FAC28BAF735004F6711 /* CachedAsyncImage */,
+			);
 			productName = MMSChallenge;
 			productReference = DB8FE0B128B63EF300072E9B /* MMSChallenge.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +147,9 @@
 				Base,
 			);
 			mainGroup = DB8FE0A828B63EF300072E9B;
+			packageReferences = (
+				DBA27FAB28BAF735004F6711 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+			);
 			productRefGroup = DB8FE0B228B63EF300072E9B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +176,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBA27FAF28BB06F7004F6711 /* NewsArticleView.swift in Sources */,
+				DB8FE0C928B66A7700072E9B /* MentalHealthNews.swift in Sources */,
+				DB8FE0C328B6407600072E9B /* HomeScreenView.swift in Sources */,
+				DBA27FAA28BAF290004F6711 /* NewsArticle.swift in Sources */,
 				DB8FE0B728B63EF300072E9B /* ContentView.swift in Sources */,
+				DBA27FA828BAF272004F6711 /* NewsView.swift in Sources */,
 				DB8FE0B528B63EF300072E9B /* MMSChallengeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +381,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DBA27FAB28BAF735004F6711 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DBA27FAC28BAF735004F6711 /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DBA27FAB28BAF735004F6711 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			productName = CachedAsyncImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DB8FE0A928B63EF300072E9B /* Project object */;
 }
